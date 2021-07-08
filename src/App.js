@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { SideBar } from "./view-components/SideBar";
+import { Route } from 'react-router-dom';
+
+import Home from './views/Home'
+import About from './views/About'
+import CanDo from './views/WhatICanDO'
+import Contacts from './views/Contacts'
+
+class App extends React.Component {
+
+  componentDidMount() {
+    document.body.style.backgroundColor = "rgb(42, 42, 42)";
+  }
+  
+  render() {
+    return (
+      <div>
+        <SideBar />
+        <Route exact path="/">
+          <Home />
+          <About />
+          <CanDo />
+        </Route>
+        <Route exact path="/contacts" component={Contacts} />
+      </div>
+    )
+  }
 }
 
 export default App;

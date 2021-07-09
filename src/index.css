@@ -266,20 +266,14 @@
 }
 
 .img-circle-wrap {
-  position:absolute;
-  bottom:1vh;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-
   z-index: 3;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
   gap:0;
-  padding-left: 19vw;
-  padding-right: 19vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 .img-circle {
   position: relative;
@@ -307,9 +301,9 @@
 }
 
 .contactBox {
-  margin-bottom: 25vh;
+  margin-bottom: var(--bar-size);
   width: 90vw;
-  height: 60vh;
+  height: calc(85vh - var(--bar-size));
 
   background-color: var(--primary-darker-color);
   border: 5px solid var(--secondary-color);
@@ -471,7 +465,7 @@
     margin-top: 5rem;
     margin-bottom: 2rem;
     width: 90vw;
-    height: 902px;
+    height: 175vw;
   }
   .img-circle-wrap {  
     grid-template-columns: 1fr 1fr; 

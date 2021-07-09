@@ -40,8 +40,8 @@ class WhatICanDo extends React.Component {
                         <img alt="a render I made" src={Blend} />
                     </div>
                     <div className="grid-item">
-                        Unity Asset Creation<br />
-                        <div className="text-small">I can fabricate C# script assets and 2D sprites for Unity</div><br />
+                        Unity Assets<br />
+                        <div className="text-small">I can build C# scripts and sprites for Unity</div><br />
                         <img alt="assets in Unity I made" src={Unity} />
                     </div>
                     <div className="grid-item">
@@ -50,12 +50,12 @@ class WhatICanDo extends React.Component {
                         <img alt="me making a C# TCP server" src={Other} />
                     </div>
                     <div className="grid-item">
-                        Front-end WebDev<br />
+                        Front-end<br />
                         <div className="text-small">I can synthesise front-end displays for your applications</div><br />
                         <img alt="a website I made" src={Frontend} />
                     </div>
                     <div className="grid-item">
-                        Back-end WebDev<br />
+                        Back-end<br />
                         <div className="text-small">I can design API's and API interactions for your apps</div><br />
                         <img alt="an API I made" src={Backend} />
                     </div>

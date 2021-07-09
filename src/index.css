@@ -143,7 +143,7 @@
   height: 100vh;
 }
 .vh-adap {
-  min-height: 40rem;
+  min-height: 50rem;
   height: 100vh;
 }
 
@@ -159,13 +159,11 @@
 }
 
 .mail-text {
-  padding-top:10vh;
-  font-size: 2vw;
-  position:absolute;
+  padding-top:5vh;
+  padding-bottom:5vh;
+  font-size: 5vw;
   z-index: 4;
-  top:1vh;
-  left:50%;
-  transform: translate(-50%);
+  text-align:center;
 }
 
 .text-large-shrink {
@@ -499,9 +497,7 @@
     max-height: 220px;
   }
   .mail-text {
-    padding-top:3.5rem;
-    font-size: 30px;
-    
+    font-size: 7vw;
     top:1vh;
   }
 }
@@ -553,17 +549,7 @@
     max-height: 220px;
   }
   .mail-text {
-    padding-top:3.5rem;
-    font-size: 30px;
-    
-    top:1vh;
-  }
-}
-
-@media only screen and (max-height: 660px) {
-  :root {
-    --bar-size:5rem;
-    --bar-font-size:4rem;
+    font-size: 7vw;
   }
 }
 
@@ -617,10 +603,7 @@
     max-height: 220px;
   }
   .mail-text {
-    padding-top:10vh;
-    font-size: min(9vw, 90px);
-    
-    padding-top:3.5rem;
+    font-size: 7vw;
   }
 
   .grid-item img {
@@ -640,6 +623,19 @@
   }
 
   .code-box {
-    font-size: 100%;
+    font-size: 95%;
+  }
+}
+
+@media only screen and (max-height: 50rem) {
+
+  .grid-item {
+    border-width: 2.5px;
+    width: 2rem;
+    height: 10rem;
+  }
+  .grid-item img {
+    border-width: 1.25px;
+    width: 4rem;
   }
 }

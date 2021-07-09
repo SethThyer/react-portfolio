@@ -11,9 +11,10 @@ import game from '../images/Projects/WebSite.png'
 class Contacts extends React.Component {
 
   render() {
+    window.scrollTo(0, 0);
     return (
       <div className="contacts">
-        <Typist className="wrap-off pencil text-code color-complementary tl o-5 noIbar z-3" cursor={{ show: false }} >&lt;a href="mailto:seth@gmail.com"&gt;Send me an Email!&lt;/a&gt;</Typist>
+        <Typist className="wrap-off pencil text-code color-complementary tl noIbar z-3" cursor={{ show: false }} >&lt;a&gt;Send me an Email!&lt;/a&gt;</Typist>
         <div className="center-children bg-color-primary">
           <div className="z-1 contactBox">
             Let's work together on something amazing!<br />

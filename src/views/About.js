@@ -34,7 +34,9 @@ class AboutPage extends React.Component {
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'React',<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Mongoose',<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'SQLite',<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'GitHub',<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Git',<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Blender',<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Unity',<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'Express',<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'NodeJS'<br />
                     &nbsp;&nbsp;&nbsp; {"}"},<br />
@@ -43,7 +45,7 @@ class AboutPage extends React.Component {
                     <br />{"}"}
                 </div>
                   <section>   
-                    <div className="wrap-off pencil text-code color-complementary pos-corner o-5 noIbar z-3 mt-3">
+                    <div className="wrap-off pencil text-code color-complementary pos-corner noIbar z-3 mt-3">
                       <div>
                         {this.setText()}
                       </div>

@@ -23,7 +23,7 @@ class WhatICanDo extends React.Component {
     render() {
         return (
             <div className="vh-adap text text-large color-contrast bg-color-primary dots">
-                <div className="wrap-off pencil text-code color-complementary tl-rel o-5 noIbar z-3">
+                <div className="wrap-off pencil text-code color-complementary tl-rel noIbar z-3">
                     <div>
                         {this.setText()}
                     </div>

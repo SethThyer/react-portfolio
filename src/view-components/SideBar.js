@@ -39,7 +39,7 @@ export const SideBar = () => {
     displayNav = !displayNav;
     setVisible(true);
   }
-  console.log(displayNav)
+  
   return (
       <header className={ scrollReact() + ` bg-color-black SideBar opacity-harden z-3 `} onClick={handleClick}>
           <Link className="color-secondary text-s-large code center-h pointer" to={pageLoad()}>

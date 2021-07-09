@@ -8,7 +8,7 @@
   --black-color: rgb(24, 24, 24);
   --primary-darker-color: rgb(33, 33, 33);
   --secondary-color: #8d3333;
-  --complementary-color: #844b9e;
+  --complementary-color: #784491;
   --type-color:rgb(204, 204, 204);
   
   --code-font: monospace;
@@ -18,6 +18,9 @@
   --regular-size:1.5rem;
   --medium-size:2.5rem;
   --large-size:10rem;
+
+  --bar-size:7rem;
+  --bar-font-size:6rem;
 }
 
 
@@ -75,7 +78,7 @@
   font-size: var(--large-size);
 }
 .text-s-large {
-  font-size: 6rem;
+  font-size: var(--bar-font-size);
 }
 
 .code {
@@ -90,25 +93,6 @@
 
 .wrap-off {
   white-space: nowrap;
-}
-
-
-
-/* opacities */
-.o-1 {
-  opacity: 1;
-}
-.o-75 {
-  opacity: 0.75;
-}
-.o-5 {
-  opacity: 0.5;
-}
-.o-25 {
-  opacity: 0.25;
-}
-.o-0 {
-  opacity: 0;
 }
 
 
@@ -138,7 +122,7 @@
 }
 .tl {
   position:absolute;
-  top:5%;
+  top:3%;
   left: 5%
 }
 .tl-rel {
@@ -321,7 +305,7 @@
 }
 
 .contacts {
-  height: calc(100vh - 7rem);
+  height: calc(100vh - var(--bar-size));
 }
 
 .contactBox {
@@ -345,12 +329,12 @@
 }
 
 .SideBar {
-  height: 7rem;
+  height: var(--bar-size);
   width: 100%;
   z-index: 5;
 }
 .fitNav {
-  height: calc(100vh - 7rem);
+  height: calc(100vh - var(--bar-size));
 }
 
 .code-box {
@@ -438,7 +422,7 @@
 }
 .outView {
   position:sticky;
-  top: -7rem;
+  top: calc(0rem - var(--bar-size));
 }
 .outView:hover {
   top:0;
@@ -446,24 +430,32 @@
 
 .navDisplay {
   position: sticky;
-  top: calc(100vh - 7rem);
+  top: calc(100vh - var(--bar-size));
   overflow: hidden; /* Hide scrollbars */
 }
 
+
 @media only screen and (max-width: 660px) {
   :root {
+    --bar-size:5rem;
+    --bar-font-size:4rem;
+
     --small-size:0.75rem;
-    --code-size: 1.1rem;
+    --code-size: 1rem;
     --regular-size:1.2vh;
     --medium-size:1.25rem;
     --large-size:5rem;
+  }
+
+  .grid-item {
+    font-size: var(--medium-size);
   }
 
   .code-box {
     width: 90%;
     margin-left: 2vw;
     margin-right: 2vw;
-    font-size: 120%;
+    font-size: 125%;
   }
   #waves-aboutpage {
     visibility: hidden;
@@ -475,7 +467,7 @@
 
   .navDisplay {
     position: absolute;
-    top: calc(902px + 7rem);
+    top: calc(100vh + var(--bar-size));
   }
   .contactBox {
     margin-top: 5rem;
@@ -519,7 +511,7 @@
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1fr 1fr 1fr; 
     gap: 0.25px;
-    row-gap:0.25px;
+    row-gap:5vh;
   }
   .grid-item {
     border-width: 2.5px;
@@ -535,7 +527,6 @@
     visibility: hidden;
   }
 }
-
 
 @media only screen and (min-width: 1450px) {
   .tl-rel {
@@ -569,22 +560,32 @@
   }
 }
 
+@media only screen and (max-height: 660px) {
+  :root {
+    --bar-size:5rem;
+    --bar-font-size:4rem;
+  }
+}
 
 @media only screen and (max-height: 902px) {
   :root {
     --small-size:0.75rem;
-    --code-size: 1.1rem;
+    --code-size: 1rem;
     --regular-size:1.2vh;
     --medium-size:1.25rem;
     --large-size:5rem;
   }
 
+  .code-box {
+    font-size: 120%;
+  }
+  
   .contacts {
     height: 902px;
   }
   .navDisplay {
     position: absolute;
-    top: calc(902px + 7rem);
+    top: calc(902px + var(--bar-size));
   }
   .contactBox {
     margin-top: 5rem;
@@ -629,8 +630,16 @@
   .grid-item {
     width: 10vW;
   }
-  
+}
+
+@media only screen and (max-width: 360px) {
+
+  .grid-item {
+    min-width: 125px;
+    min-height: 125px;
+  }
+
   .code-box {
-    font-size: 120%;
+    font-size: 100%;
   }
 }

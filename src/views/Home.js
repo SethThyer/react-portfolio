@@ -4,6 +4,8 @@ import Typist from 'react-typist';
 class Home extends React.Component {
 
   render() {
+    window.scrollTo(0, 0);
+
     return (
       <div>
         <div className="fitNav text text-large color-contrast center-children bg-color-primary-darker">
@@ -17,7 +19,7 @@ class Home extends React.Component {
               <span className="noIbar text-color-anim">t</span>   
               <span className="noIbar text-color-anim">h</span>
             </div>
-            <div className="wrap-off pencil text-code color-complementary pos-corner o-5 noIbar">
+            <div className="wrap-off pencil text-code color-complementary pos-corner noIbar">
                 <Typist cursor={{ show: false }} >&lt;h1&gt;I'm Seth&lt;/h1&gt;</Typist>
             </div>    
         </div>

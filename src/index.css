@@ -265,36 +265,51 @@
   width:95%;
 }
 
+
 .img-circle-wrap {
   z-index: 3;
   display: grid;
   place-items: center;
+
   grid-template-columns: 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap:0;
-  padding-left: 10vw;
-  padding-right: 10vw;
+
+  gap:5rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .img-circle {
   position: relative;
-  height:15.5vw;
-  width:15.5vw;
+  height:21.5vw;
+  width:21.5vw;
+
+  max-height: 19.5rem;
+  max-width: 19.5rem;
 }
 .img-circle img {
   border: 5px solid var(--secondary-color);
   border-radius: 50%;
   position: relative;
 
-  height:10vw;
-  width:10vw;
+  height:15vw;
+  width:15vw;
+
+  max-height: 14.5rem;
+  max-width: 14.5rem;
+
   transition:all 250ms;
 }
 .img-circle img:hover {
   border-radius: 25%;
   z-index: 4;
-  height:15vw;
-  width:15vw;
+
+  height:20vw;
+  width:20vw;
+
+  max-height: 18.5rem;
+  max-width: 18.5rem;
 }
+
 
 .contacts {
   height: calc(100vh - var(--bar-size));
@@ -311,7 +326,6 @@
 
   text-align: center;
   font-size: min(3.5vw, 70px);
-  font-family: var(--code-font);
   color:var(--type-color);
 
   box-shadow: 2rem 2rem 0rem #00000023;
@@ -459,7 +473,7 @@
 
   .navDisplay {
     position: absolute;
-    top: calc(100vh + var(--bar-size));
+    top: calc(100vh - var(--bar-size));
   }
   .contactBox {
     margin-top: 5rem;
@@ -473,14 +487,14 @@
     padding:0 0 0 0;
   }
   .img-circle {
-    height:35.5vw;
-    width:35.5vw;
+    height:36.5vw;
+    width:36.5vw;
     max-width: 225px;
     max-height: 225px;
   }
   .img-circle img { 
-    height:30vw;
-    width:30vw;
+    height:27vw;
+    width:27vw;
     max-width: 175px;
     max-height: 175px;
   }
@@ -522,28 +536,6 @@
   .tl-rel {
     margin-left:25px;
     margin-bottom: 4vh;
-  }
-
-  .img-circle {
-    height:35.5vw;
-    width:35.5vw;
-    max-width: 225px;
-    max-height: 225px;
-  }
-  .img-circle img { 
-    height:30vw;
-    width:30vw;
-    max-width: 175px;
-    max-height: 175px;
-  }
-  .img-circle img:hover {
-    height:35vw;
-    width:35vw;
-    max-width: 220px;
-    max-height: 220px;
-  }
-  .mail-text {
-    font-size: 7vw;
   }
 }
 

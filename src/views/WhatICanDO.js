@@ -51,12 +51,12 @@ class WhatICanDo extends React.Component {
                     </div>
                     <div className="grid-item">
                         Front-end<br />
-                        <div className="text-small">I can synthesise front-end displays for your applications</div><br />
+                        <div className="text-small">I can design front-end displays for your applications</div><br />
                         <img alt="a website I made" src={Frontend} />
                     </div>
                     <div className="grid-item">
                         Back-end<br />
-                        <div className="text-small">I can design API's and API interactions for your apps</div><br />
+                        <div className="text-small">I can create API's and API interactions for your apps</div><br />
                         <img alt="an API I made" src={Backend} />
                     </div>
                 </div>
